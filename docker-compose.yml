@@ -17,7 +17,6 @@ services:
     networks:
       tarantool_app_dev:
     volumes:
-      # configure telegraf to work out of the box
       - ./telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
 
   influxdb:

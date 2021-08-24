@@ -45,10 +45,6 @@ assert(ok, tostring(err))
 local metrics = require('cartridge.roles.metrics')
 metrics.set_export({
    {
-       path = '/metrics/json',
-       format = 'json'
-   },
-   {
        path = '/metrics/prometheus',
        format = 'prometheus'
    },
